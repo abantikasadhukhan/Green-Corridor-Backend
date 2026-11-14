@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Green-Corridor-Backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/corridor
+    username: corridor
+    password: ${POSTGRES_PASSWORD}
+    jpa:
+      hibernate:
+        ddl-auto: validate
+    data:
+      redis:
+        host: localhost
+        port: 6379
